@@ -1,6 +1,9 @@
 # I.AUC
 Monitor Your System With The Powerfull & Customizable Toll: **I.AUC(Iranian Arch Users Conky)**
 
+## Preview
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "I.AUC")
+
 ## Installation
 1. Install conky-manager , conky-lua from repositories(get conky-lua from AUR)
   * if get trouble through installing conky-lua,[see here](http://stack.blog.ir/1394/08/08/arch_tips)  
