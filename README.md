@@ -1,5 +1,5 @@
 # I.AUC
-Iranian Arch Users Conky
+Monitor Your System With A Powerfull & Modern Toll: I.AUC(Iranian Arch Users Conky)
 
 ## Installation
 1. Install conky-manager , conky-lua from repositories(get conky-lua from AUR)
@@ -11,7 +11,7 @@ Iranian Arch Users Conky
 
 
 ## Usage
-Monitor Your System with powerfull and readable I.AUC
+
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
