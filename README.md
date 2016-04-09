@@ -12,9 +12,9 @@ Monitor Your System with powerfull and readable I.AUC
 5. Submit a pull request :D
 
 
-## History
-TODO: Write history
+## VisitUs
+bbs.archusers.ir
 ## Credits
-LinArcX(stackultraflow@gmail.com)
+LinArcX(stack.blog.ir)
 ## License
 GPL.Ver3
