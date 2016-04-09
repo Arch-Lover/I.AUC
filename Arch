@@ -1,0 +1,187 @@
+*###########################################################################*
+#                   Copyright (C) 2015  LinArch                             #
+#									    #
+#    This program is free software: you can redistribute it and/or modify   #
+#    it under the terms of the GNU General Public License as published by   #
+#    the Free Software Foundation, either version 3 of the License, or      #
+#    (at your option) any later version.				    #
+#									    #
+#    This program is distributed in the hope that it will be useful,        #
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of         #
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the          #
+#    GNU General Public License for more details.		            #
+#									    #
+#    You should have received a copy of the GNU General Public License      #
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.  #
+*###########################################################################*
+
+############################################################################*
+##             Iranian Arch Users Conky(I.AUC.ver2)                        ##
+##             Developed By:          LinArcX                              ##
+##	       Visit Me:           www.stack.blog.ir                       ##
+##             Visit Us:          www.bbs.archusers.ir                     ##
+##             Conky-Tut: http://conky.sourceforge.net/documentation.html  ##
+##             Lua-Tut:    http://www.tutorialspoint.com/lua/index.htm     ##
+############################################################################*
+
+## I.AUC contain 5 Seprated Parts.according to your Need, Use Theme And Enjoy!!
+## This Is : "Arch"
+
+##################################
+##   Pre-Defined Variables      ##
+##################################
+#background no
+update_interval 2
+cpu_avg_samples 2
+net_avg_samples 2
+override_utf8_locale yes
+double_buffer yes
+no_buffers yes
+text_buffer_size 2048
+#imlib_cache_size 0
+temperature_unit celsius
+
+# Window specifications #
+own_window yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_argb_visual yes
+own_window_argb_value 0
+own_window_transparent yes
+own_window_type desktop
+# Window specifications #
+
+default_color DDF2FF
+draw_borders no
+#border_margin 2
+draw_graph_borders yes
+draw_outline no
+draw_shades no
+
+alignment tl
+gap_x 4
+gap_y 34
+
+# Text settings #
+use_xft yes
+xftfont DroidSans:size=8.75
+xftalpha 0.1
+uppercase no
+
+# color defs - change as required
+color0 White		#FFFFFF
+color1 Ivory		#FFFFF0
+color2 Ivory2		#EEEEE0
+color3 Ivory3		#CDCDC1
+color4 1793d1		#0b79ac
+color5 Tan2		#EE9A49
+color6 Gray		#7E7E7E
+color7 AntiqueWhite4	#8B8378
+color8 DimGray		#696969
+color9 Tomato		#FF6347
+
+####
+## Add spaces to keep things from moving around?
+## Only affects certain objects.
+#
+#use_spacer right
+#####
+## Load Lua for shading (optional)
+## Set the path to your script here.
+#
+lua_load /home/saeed/.conky/ArchConky/Lua/draw_bg.lua
+lua_draw_hook_pre draw_bg
+
+####
+## Load Lua for bargraphs (required)
+## Set the path to your script here.
+#
+lua_load /home/saeed/.conky/ArchConky/Lua/bargraph_small.lua
+lua_draw_hook_post main_bars
+
+####
+## Define the locations of Conkywx files (required)
+## Set the path to your .confs, seds, and templates here.
+## Tips n' Tricks: seds files must be marked as executable, e.g. have execute permissions.
+#
+minimum_size 250 380
+#maximum_width 260
+#own_window_colour 000000
+TEXT
+##################################
+##             LOGO             ##
+##################################
+## Uncomment for hard-coded ID (static)
+#${voffset 0}${font OpenLogos:size=40}${color4}B${font}${voffset -30}${font UbuntuTitleBold:size=19.6}$alignc arch${offset 7}Linux${font}
+#${voffset -4}
+## Uncomment for soft-coded ID (dynamic)
+#${voffset -80}${font OpenLogos:size=103}${color3}${font}${voffset -76}${goto 179}${font UbuntuTitleBold:size=19.6}${color4}${pre_exec cat /etc/*release | grep 'RELEASE' | awk -F'=' #'{print $2}'}${font}
+####
+## Additional ID (branch version, code name, release date, etc.)
+#${voffset -1}${goto 188}${font Ubuntu-B:size=8.1}${color4}alpha 1${font}
+##################################
+##           Version            ##
+##################################
+${voffset 0}${font StyleBats:size=10}${color1}${font DroidSans:bold:size=8}${color4}About Us${offset 8}${color8}${voffset -2}${hr 2}${font}
+${voffset 2}${alignc}${font Caviar Dreams:size=9}${color green}Iranian . ${color white}ArchUsersConky(AUC) . ${color red} ver2
+${voffset 2}${font Caviar Dreams:size=8.3}${color3}Designed By:${goto 120}${font Zekton:size=8.3}${alignr}StackOverFlow
+##################################
+##            SYSTEM            ##
+##################################
+${voffset 0}${font StyleBats:size=10}${color1}t${font DroidSans:bold:size=8.25}${color4}SYSTEM${offset 8}${color8}${voffset -2}${hr 2}${font}
+${voffset 6}${offset -2}${font OpenLogos:size=12}${color3}B${voffset -4}${font DroidSans:size=8.6}${color3}${offset 3}${sysname}${offset 3}${kernel}${goto 130}${font DroidSans:size=8.3}${machine}${font}${goto 170}${font StyleBats:size=10}${color1}j${voffset -1}${font DroidSans:size=8.65}${color3}${offset 5}DE$alignr$DESKTOP_SESSION
+${voffset 2}${font StyleBats:size=10}${color3}A${voffset -1}${font DroidSans:size=8.6}${color3}${offset 5}nVidia GeForce GT 540M${goto 130}${font DroidSans:size=8.3}${freq_g cpu}${offset 1}GHz${font}${goto 170}${font StyleBats:size=10}${color1}z${voffset -1}${font DroidSans:size=8.65}${color3}${offset 5}User$alignr $USER
+#${voffset 0}${offset 55}${font ornaments labels and frames:size=25}${color3}d
+${voffset 2}${font StyleBats:size=10}${color3}q${voffset -1}${font DroidSans:size=8.6}${color3}${offset 5}System${offset 3}Uptime${goto 130}${font DroidSans:size=8.3}${uptime_short}${font}${goto 170}${font StyleBats:size=10}${color3}2${font DroidSans:size=8.6}${color3}${offset 5}Temp$alignc${alignr 1}${font DroidSans:size=8.3}${hwmon 0 temp 1}°C${offset 1}-${hwmon 1 temp 1}°C${font}
+${voffset 1}${font StyleBats:size=10}${color1}G${voffset -1}${font DroidSans:size=8.65}${color3}${offset 5}Bios/Uefi${goto 130}${font DroidSans:size=8.3}${exec [ -d /sys/firmware/efi ] && echo UEFI || echo BIOS}${goto 170}${font StyleBats:size=10}${color1}5${voffset -1}${font DroidSans:size=8.65}${color3}${offset 5}Lang${alignr 1}$LANG
+${voffset 1}${font StyleBats:size=10}${color1}E${voffset -1}${font DroidSans:size=8.65}${color3}${offset 5}Display${goto 140}$DISPLAY${goto 170}${font StyleBats:size=10}${color1}S${voffset -1}${font DroidSans:size=8.65}${color3}${offset 5}Shell${alignr 1}$SHELL
+${voffset 1}${font StyleBats:size=10}${color1}k${voffset -1}${font DroidSans:size=8.65}${color3}${offset 5}Boot Time:${alignr}(Kernel) ${exec systemd-analyze | cut -d" " -f4 } +(userspace) ${exec systemd-analyze | cut -d" " -f7 } = ${exec systemd-analyze | cut -d" " -f10 } ${exec systemd-analyze | cut -d" " -f11 }
+##################################
+##          PROCESSORS          ##
+##################################
+${voffset 4}${font StyleBats:size=10}${color1}t${font DroidSans:bold:size=8}${color4}PROCESSORS${offset 8}${color8}${voffset -2}${hr 2}${font}
+${voffset 6}${font StyleBats:size=9.9}${color3}4${voffset -2}${font DroidSansFallback:size=8.39}${color3}${offset 2}CPU1${offset 5}${font DroidSans:size=8.3}${cpu cpu1}%${font}
+${voffset 2}${font StyleBats:size=9.9}${color3}4${voffset -2}${font DroidSansFallback:size=8.39}${color3}${offset 2}CPU2${offset 5}${font DroidSans:size=8.3}${cpu cpu2}%${font}
+${voffset 2}${font StyleBats:size=9.9}${color3}4${voffset -2}${font DroidSansFallback:size=8.39}${color3}${offset 2}CPU3${offset 5}${font DroidSans:size=8.3}${cpu cpu3}%${font}
+${voffset 2}${font StyleBats:size=9.9}${color3}4${voffset -2}${font DroidSansFallback:size=8.39}${color3}${offset 2}CPU4${offset 5}${font DroidSans:size=8.3}${cpu cpu4}%${font}
+${voffset 2}${font StyleBats:size=9.9}${color3}4${voffset -2}${font DroidSansFallback:size=8.39}${color3}${offset 2}CPU5${offset 5}${font DroidSans:size=8.3}${cpu cpu5}%${font}
+${voffset 2}${font StyleBats:size=9.9}${color3}4${voffset -2}${font DroidSansFallback:size=8.39}${color3}${offset 2}CPU6${offset 5}${font DroidSans:size=8.3}${cpu cpu6}%${font}
+${voffset 2}${font StyleBats:size=9.9}${color3}4${voffset -2}${font DroidSansFallback:size=8.39}${color3}${offset 2}CPU7${offset 5}${font DroidSans:size=8.3}${cpu cpu7}%${font}
+${voffset 2}${font StyleBats:size=9.9}${color3}4${voffset -2}${font DroidSansFallback:size=8.39}${color3}${offset 2}CPU8${offset 5}${font DroidSans:size=8.3}${cpu cpu8}%${font}
+##################################
+##            MEMORY            ##
+##################################
+${voffset 4}${font StyleBats:size=10}${color1}t${font DroidSans:bold:size=8}${color4}MEMORY${offset 8}${color8}${voffset -2}${hr 2}${font}
+${voffset 4}${font StyleBats:size=10}${color3}l${voffset -2}${font DroidSansFallback:size=8.3}${color3}${offset 3}RAM${goto 97}${font DroidSans:size=8.3}${mem}${goto 133}/${offset 5}${memmax}${alignr}${memperc}%${font}
+##################################
+##             HDD              ##
+##################################
+${voffset 4}${font StyleBats:size=10}${color1}t${font DroidSans:bold:size=8}${color4}HDD${offset 8}${color8}${voffset -2}${hr 2}${font}
+${voffset 7}${font StyleBats:size=9.9}${color3}x${voffset -2}${font DroidSansFallback:size=8.3}${color3}${offset 4}Boot${goto 95}${font DroidSans:size=8.3}${fs_used /boot}${goto 133}/${offset 5}${fs_size /boot}${alignr}${fs_free_perc /boot}%${font}
+${voffset 7}${font StyleBats:size=9.9}${color3}p${voffset -2}${font DroidSansFallback:size=8.3}${color3}${offset 4}SWAP${goto 95}${font DroidSans:size=8.3}${swap}${goto 133}/${offset 5}${swapmax}${alignr}${swapperc}%${font}
+${voffset 7}${font StyleBats:size=9.9}${color3}g${voffset -2}${font DroidSansFallback:size=8.3}${color3}${offset 4}ROOT${goto 95}${font DroidSans:size=8.3}${fs_used /}${goto 133}/${offset 5}${fs_size /}${alignr}${fs_free_perc /}%${font}
+${voffset 7}${font StyleBats:size=9.9}${color3}f${voffset -2}${font DroidSansFallback:size=8.3}${color3}${offset 4}HOME${goto 95}${font DroidSans:size=8.3}${fs_used /home}${goto 133}/${offset 5}${fs_size /home}${alignr}${fs_free_perc /home}%${font}
+${voffset 7}${font StyleBats:size=9.9}${color3}a${voffset -2}${font DroidSansFallback:size=8.3}${color3}${offset 4}C:${goto 95}${font DroidSans:size=8.3}${fs_used /mnt/C}${goto 133}/${offset 5}${fs_size /mnt/C}${alignr}${fs_free_perc /mnt/C}%${font}
+${voffset 7}${font StyleBats:size=9.9}${color3}a${voffset -2}${font DroidSansFallback:size=8.3}${color3}${offset 4}D:${goto 95}${font DroidSans:size=8.3}${fs_used /mnt/D}${goto 133}/${offset 5}${fs_size /mnt/D}${alignr}${fs_free_perc /mnt/D}%${font}
+##################################
+##             TIME             ##
+##################################
+${voffset 4}${font StyleBats:size=10}${color1}t${font DroidSans:bold:size=8}${color4}TIME${offset 8}${color8}${voffset -2}${hr 2}${font}
+${voffset -4}${font RadioSpace:size=32}${color3}${if_match ${time %l}<=9}${alignc 7}${time %l:%M%p}${else}${if_match ${time %l}>=10}${alignc -1}${time %l:%M%p}${endif}${endif}${font}
+${voffset 0}${font :size=10}${alignc}${color orange}GMT ${color3}${tztime GMT %H:%M} ${font :size=10}${alignc}${color orange}PST ${color3}${tztime PST8PDT %H:%M}${font}
+${voffset 0}${font :bold:size=12}${color3}${alignc}${time %A, %d %b. %Y}${font}
+${voffset 4}${font XM Yekan:size=20}${alignc}${exec jdate +%W|grep -o --color=never -e ^....|fribidi --ltr}${offset 2}،${offset 2}${exec jdate +%V|fribidi --ltr}${offset 2}${exec jdate +%W|grep -o --color=never -e ..$|fribidi --ltr}${offset 2}،${offset 2}${exec jdate +%G|fribidi --ltr}
+##################################
+##           NETWORK            ##
+##################################
+${voffset -18}${font StyleBats:size=10}${color1}t${font DroidSans:bold:size=8}${color4}NETWORK${offset 8}${color8}${voffset -2}${hr 2}${font}
+#${voffset 0}${font StyleBats:size=10}${color1}g${voffset -1}${font DroidSans:size=8.65}${color3}${offset 5}Mac${goto 120}${font DroidSans:size=8.3}${alignr}${wireless_ap wlp3s0}
+#${voffset 0}${font StyleBats:size=10}${color1}a${voffset -1}${font DroidSans:size=8.65}${color3}${offset 5}ESSID${goto 120}${font DroidSans:size=8.3}${alignr}${wireless_essid wlp3s0}
+${voffset 0}${font StyleBats:size=10}${color1}n${voffset -1}${font DroidSans:size=8.65}${color3}${offset 5}BitRate${goto 120}${font DroidSans:size=8.3}${alignr}${wireless_bitrate wlp3s0}
+${voffset 0}${font PizzaDudeBullets:size=9.5}${color6}T${font DroidSans:size=8.65}${color3}${offset 5}Download${goto 120}${font DroidSans:size=8.3}${downspeed wlp3s0}${alignr}${font DroidSans:size=8.3}${totaldown wlp3s0}${font}
+${downspeedgraph wlp3s0 8, 000000 ffffff}
+${voffset 0}${font PizzaDudeBullets:size=9.5}${color6}N${font DroidSans:size=8.65}${color3}${offset 5}Upload${goto 120}${font DroidSans:size=8.3}${upspeed wlp3s0}${alignr}${font DroidSans:size=8.3}${totalup wlp3s0}${font}
+${upspeedgraph wlp3s0 8, 000000 ffffff}
+#${voffset 0}${font PizzaDudeBullets:size=9.5}${color6}a${font DroidSans:size=8.65}${color3}${offset 5}Public${offset 7}IP${goto 121}${font DroidSansFallback:size=8.3}${execi 1800 wget -q -O - checkip.dyndns.org | sed -e 's/[^[:digit:]\|.]//g'}${alignr}${font DroidSans:size=8.5}WAN${font}
+#${voffset 0}${font PizzaDudeBullets:size=9.5}${color6}a${font DroidSans:size=8.65}${color3}${offset 5}Private${offset 3}IP${goto 123}${font DroidSansFallback:size=8.3}${addr wlp3s0}${alignr}${font DroidSans:size=8.5}WiFi${font}
+${voffset 2}${font KG Arrows:size=17}${color1}w${voffset -1}${font DroidSans:size=8.65}${color3}${offset 85}Who is Connected to me${offset 64}${font KG Arrows:size=17}${color3}${voffset -5}x
+${voffset -10}${font DroidSans:size=8.3}${exec nmap -sP 192.168.1.0/24 | grep for | cut -d" " -f5}

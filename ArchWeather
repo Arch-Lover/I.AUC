@@ -1,0 +1,98 @@
+*###########################################################################*
+#                   Copyright (C) 2015  LinArch                             #
+#									    #
+#    This program is free software: you can redistribute it and/or modify   #
+#    it under the terms of the GNU General Public License as published by   #
+#    the Free Software Foundation, either version 3 of the License, or      #
+#    (at your option) any later version.				    #
+#									    #
+#    This program is distributed in the hope that it will be useful,        #
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of         #
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the          #
+#    GNU General Public License for more details.		            #
+#									    #
+#    You should have received a copy of the GNU General Public License      #
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.  #
+*###########################################################################*
+
+############################################################################*
+##             Iranian Arch Users Conky(I.AUC.ver2)                        ##
+##             Developed By:          LinArcX                              ##
+##	       Visit Me:           www.stack.blog.ir                       ##
+##             Visit Us:          www.bbs.archusers.ir                     ##
+##             Conky-Tut: http://conky.sourceforge.net/documentation.html  ##
+##             Lua-Tut:    http://www.tutorialspoint.com/lua/index.htm     ##
+############################################################################*
+
+## I.AUC contain 5 Seprated Parts.according to your Need, Use Theme And Enjoy!!
+## This Is : "ArchWeather"
+
+##################################
+##   Pre-Defined Variables      ##
+##################################
+#background no
+update_interval 2
+cpu_avg_samples 2
+net_avg_samples 2
+override_utf8_locale yes
+double_buffer yes
+no_buffers yes
+text_buffer_size 2048
+temperature_unit celsius
+
+# Window specifications #
+own_window yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_argb_visual yes
+own_window_argb_value 0
+own_window_transparent yes
+own_window_type desktop
+# Window specifications #
+
+default_color DDF2FF
+draw_borders no
+#border_margin 2
+draw_graph_borders yes
+draw_outline no
+draw_shades no
+
+alignment tr
+gap_x 4
+gap_y 34
+
+# Text settings #
+use_xft yes
+xftfont DroidSans:size=8.75
+xftalpha 0.1
+uppercase no
+
+# color defs - change as required
+color0 White		#FFFFFF
+color1 Ivory		#FFFFF0
+color2 Ivory2		#EEEEE0
+color3 Ivory3		#CDCDC1
+color4 1793d1		#0b79ac
+color5 Tan2		#EE9A49
+color6 Gray		#7E7E7E
+color7 AntiqueWhite4	#8B8378
+color8 DimGray		#696969
+color9 Tomato		#FF6347
+
+#Fonts 
+#Cantarell, CaviarDreams, Nimbus Sans L, URW Gothic, AvanGarde LT medium, AvanGarde LT ExtraLight, GeosansLight, Nexa Light, Open Sans, Aileron, Weather Icons, Tall Films, Sun n Moon, ConkyWeather, Weather
+
+minimum_size 350 380
+
+TEXT
+${voffset 0}${execi 300 source Scripts/weather.sh;location}${font Cantarell:size=15}${execi 300 source Scripts/weather.sh;city}, ${execi 300 source Scripts/weather.sh;country}${image Images/wind.png -p 150,5 -s 10x10}${offset 50}${font Cantarell:size=8}${voffset 5}${execi 300 source Scripts/weather.sh;wind}m/s${image Images/humidity.png -p 190,5 -s 10x10}${offset 20}${execi 300 source Scripts/weather.sh;atmosphere}%${alignr}
+${execi 300 cp -f /Images/$(source /Scripts/weather.sh;day1).png ~/.cache/weather.png}${image ~/.cache/weather-1.png -p 250,0 -s 75x75}
+${voffset -15}${font GeosansLight:size=45}${execi 300 source Scripts/weather.sh;todayTemp}°C${voffset -20}${offset 40}${font Weather:size=20}${color1}B${font GeosansLight:size=12}${voffset -5}${offset 10}${execi 300 source Scripts/weather.sh;sunrise}${voffset 20}${offset -10}${font Weather:size=20}${color1}A${font GeosansLight:size=12}${voffset -5}${offset -70}${execi 300 source Scripts/weather.sh;sunset}
+${voffset 0}${offset 260}${font CaviarDreams:size=10}${execi 300 source Scripts/weather.sh;status1}${font CaviarDreams:size=15}
+${execi 300 cp -f Images/$(source Scripts/weather.sh;day1).png ~/.cache/weather-1.png}${image ~/.cache/weather-1.png -p 10,90 -s 30x30}
+${execi 300 cp -f Images/$(source Scripts/weather.sh;day2).png ~/.cache/weather-2.png}${image ~/.cache/weather-2.png -p 70,90 -s 30x30}
+${execi 300 cp -f Images/$(source Scripts/weather.sh;day3).png ~/.cache/weather-3.png}${image ~/.cache/weather-3.png -p 130,90 -s 30x30}
+${execi 300 cp -f Images/$(source Scripts/weather.sh;day4).png ~/.cache/weather-4.png}${image ~/.cache/weather-4.png -p 190,90 -s 30x30}
+${execi 300 cp -f Images/$(source Scripts/weather.sh;day5).png ~/.cache/weather-5.png}${image ~/.cache/weather-5.png -p 250,90 -s 30x30}
+${execi 300 cp -f Images/$(source Scripts/weather.sh;day6).png ~/.cache/weather-6.png}${image ~/.cache/weather-6.png -p 310,90 -s 30x30}
+${voffset -105}${offset 15}${font GeosansLight:size=10}${execi 300 source Scripts/weather.sh;dayHigh1}°${offset 45}${execi 300 source Scripts/weather.sh;dayHigh2}°${offset 45}${execi 300 source Scripts/weather.sh;dayHigh3}°${offset 45}${execi 300 source Scripts/weather.sh;dayHigh4}°${offset 45}${execi 300 source Scripts/weather.sh;dayHigh5}°${offset 45}${execi 300 source Scripts/weather.sh;dayHigh6}°
+${voffset 1}${offset 15}${execi 300 source Scripts/weather.sh;dayLow1}°${offset 50}${execi 300 source Scripts/weather.sh;dayLow2}°${offset 50}${execi 300 source Scripts/weather.sh;dayLow3}°${offset 40}${execi 300 source Scripts/weather.sh;dayLow4}°${offset 50}${execi 300 source Scripts/weather.sh;dayLow5}°${offset 55}${execi 300 source Scripts/weather.sh;dayLow6}°
