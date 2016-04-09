@@ -1,6 +1,4 @@
-<snippet>
-  <content><![CDATA[
-# ${1:I.AUC}
+# 1:I.AUC
 Iranian Arch Users Conky
 ## Installation
 TODO: Describe the installation process
@@ -18,6 +16,3 @@ TODO: Write history
 LinArcX(stackultraflow@gmail.com)
 ## License
 GPL.Ver3
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
