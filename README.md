@@ -7,12 +7,13 @@ Monitor Your System With The Powerfull & Customizable Toll: **I.AUC(Iranian Arch
 ## Installation
 1. Install conky-manager , conky-lua from repositories(get conky-lua from AUR)
   * if get trouble through installing conky-lua,[see here](http://stack.blog.ir/1394/08/08/arch_tips)  
-2. `cd .conky/`
-3. `git clone https://github.com/stackultraflow/I.AUC.git`
-4. Install All Fonts in /Fonts Directory
-5. set executable mode for all scriptes in /Scripts direcory.for example:`chmod +x foobar.sh`
-6. Open conky-manager and check every conky you want to show.
-7. Enjoy Monitoring. :)
+2. Install fribidi and jcal from repositories.
+3. `cd .conky/`
+4. `git clone https://github.com/stackultraflow/I.AUC.git`
+5. Install All Fonts in /Fonts Directory
+6. set executable mode for all scriptes in /Scripts direcory.for example:`chmod +x foobar.sh`
+7. Open conky-manager and check every conky you want to show.
+8. Enjoy Monitoring. :)
 
 
 ## Usage
