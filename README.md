@@ -18,11 +18,11 @@ Monitor Your System With The Powerfull & Customizable Toll: **I.AUC(Iranian Arch
 ## Usage
 This Collection Consisto Of FIVE MAJOR PARTS:
 
-- **_Arch_**:that sit in the west region of your screen and show some important system variable,CPU-Memory Status,Time and some Networ Information like:Bit Rate,Download-Upload Speed and a very handy feature:"Who is connected to me!"
-+ Create your feature branch: `git checkout -b my-new-feature`
-- Commit your changes: `git commit -am 'Add some feature'`
-+ Push to the branch: `git push origin my-new-feature`
-- Submit a pull request :D
+- **_Arch_**: that sit in the west region of your screen and show some important system variable,CPU-Memory Status,Time and some Networ Information like:Bit Rate,Download-Upload Speed and a very handy feature:"Who is connected to me!"
++ **_ArchInfo_**: sit in the right-down corner and show some logo of free softwares and _netStat_ , all inbound/outbound network flows!
+- **_ArchProccess_**: in the right position of screen and you can see top 10 process consume very memory.
++ **_ArchService_** : in the right position of screen and you can see top 10 Favorite services.
+- **_ArchWeather_** : show wheater forecast according to your position.(it can show temp,speed,sunrise,...)
 
 ## Contributing
 1. Fork it!
