@@ -18,7 +18,7 @@ Monitor Your System With The Powerfull & Customizable Toll: **I.AUC(Iranian Arch
 ## Usage
 This Collection Consisto Of FIVE MAJOR PARTS:
 
-- **ـArchـ**:that sit in the west region of your screen and show some important system variable,CPU-Memory Status,Time and some Networ Information like:Bit Rate,Download-Upload Speed and a very handy feature:"Who is connected to me!"
+- **_Arch_**:that sit in the west region of your screen and show some important system variable,CPU-Memory Status,Time and some Networ Information like:Bit Rate,Download-Upload Speed and a very handy feature:"Who is connected to me!"
 + Create your feature branch: `git checkout -b my-new-feature`
 - Commit your changes: `git commit -am 'Add some feature'`
 + Push to the branch: `git push origin my-new-feature`
