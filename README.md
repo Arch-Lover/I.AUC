@@ -33,10 +33,10 @@ This Collection Consisto Of FIVE MAJOR PARTS:
 
 
 ## VisitUs
-bbs.archusers.ir
+[bbs.archusers.ir](http://bbs.archusers.ir/index.php)
 ## Credits
 !["I.AUC"](http://uupload.ir/files/8jwe_mrrobot.jpg "I.AUC")
 
-LinArcX(stack.blog.ir)
+LinArcX([stack.blog.ir](http://stack.blog.ir/))
 ## License
 GPL.Ver3
