@@ -14,11 +14,12 @@ Monitor Your System With A Powerfull & Modern Toll: **I.AUC(Iranian Arch Users C
 
 ## Usage
 This Collection Consisto Of FIVE MAJOR PARTS:
-1. Arch:that sit in the west region of your screen and show some important system variable,CPU-Memory Status,Time and some Networ Information like:Bit Rate,Download-Upload Speed and a very handy feature:"Who is connected to me!"
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+
+- Arch:that sit in the west region of your screen and show some important system variable,CPU-Memory Status,Time and some Networ Information like:Bit Rate,Download-Upload Speed and a very handy feature:"Who is connected to me!"
++ Create your feature branch: `git checkout -b my-new-feature`
+- Commit your changes: `git commit -am 'Add some feature'`
++ Push to the branch: `git push origin my-new-feature`
+- Submit a pull request :D
 
 ## Contributing
 1. Fork it!
