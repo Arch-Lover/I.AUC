@@ -39,4 +39,4 @@ This Collection Consisto Of FIVE MAJOR PARTS:
 
 LinArcX([stack.blog.ir](http://stack.blog.ir/))
 ## License
-GPL.Ver3
+GNU GENERAL PUBLIC LICENSE(Version 3, 29 June 2007)
