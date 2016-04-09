@@ -7,6 +7,8 @@ Iranian Arch Users Conky
 3. Install All Fonts in /Fonts Directory
 4. set executable mode for all scriptes in /Scripts direcory.for example:chmod +x foobar.sh
 5. 
+
+
 ## Usage
 Monitor Your System with powerfull and readable I.AUC
 ## Contributing
