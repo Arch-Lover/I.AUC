@@ -1,11 +1,11 @@
 # I.AUC
-Monitor Your System With A Powerfull & Modern Toll: I.AUC(Iranian Arch Users Conky)
+Monitor Your System With A Powerfull & Modern Toll: **I.AUC(Iranian Arch Users Conky)**
 
 ## Installation
 1. Install conky-manager , conky-lua from repositories(get conky-lua from AUR)
-2. if get trouble through installing conky-lua see here:http://stack.blog.ir/1394/08/08/arch_tips 
-3. cd .conky/
-4. git clone https://github.com/stackultraflow/I.AUC.git
+⋅⋅1. if get trouble through installing conky-lua,[see here](http://stack.blog.ir/1394/08/08/arch_tips)  
+2. cd .conky/
+3. git clone https://github.com/stackultraflow/I.AUC.git
 4. Install All Fonts in /Fonts Directory
 5. set executable mode for all scriptes in /Scripts direcory.for example:chmod +x foobar.sh
 6. Open conky-manager and check every conky you want to show.
