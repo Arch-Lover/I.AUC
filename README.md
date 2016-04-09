@@ -1,4 +1,4 @@
-# 1:I.AUC
+# I.AUC
 Iranian Arch Users Conky
 ## Installation
 TODO: Describe the installation process
@@ -10,6 +10,8 @@ Monitor Your System with powerfull and readable I.AUC
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
+
+
 ## History
 TODO: Write history
 ## Credits
