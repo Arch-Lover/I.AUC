@@ -1,12 +1,13 @@
 # I.AUC
 Iranian Arch Users Conky
+
 ## Installation
 1. Install conky-manager , conky-lua from repositories(get conky-lua from AUR)
-1.1. if get trouble through installing conky-lua see here:http://stack.blog.ir/1394/08/08/arch_tips
-2.
-3. Install All Fonts in /Fonts Directory
-4. set executable mode for all scriptes in /Scripts direcory.for example:chmod +x foobar.sh
-5. 
+2. 
+3. if get trouble through installing conky-lua see here:http://stack.blog.ir/1394/08/08/arch_tips
+4. Install All Fonts in /Fonts Directory
+5. set executable mode for all scriptes in /Scripts direcory.for example:chmod +x foobar.sh
+6. Submit a pull request :D
 
 
 ## Usage
