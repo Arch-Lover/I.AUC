@@ -36,7 +36,8 @@ This Collection Consisto Of FIVE MAJOR PARTS:
 [bbs.archusers.ir](http://bbs.archusers.ir/index.php)
 ## Credits
 !["I.AUC"](http://uupload.ir/files/8jwe_mrrobot.jpg "I.AUC")
-
-LinArcX([stack.blog.ir](http://stack.blog.ir/))
+LinArcX
+Blog:([stack.blog.ir](http://stack.blog.ir/))
+E-Mail:([linarcx@gmail.com]
 ## License
 GNU GENERAL PUBLIC LICENSE(Version 3, 29 June 2007)
